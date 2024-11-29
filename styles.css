@@ -1,8 +1,158 @@
+/* General Reset */
 * {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfaf5;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6b4b3f;
+    color: #fff;
+}
+
+.logo img{
+    padding: auto;
     margin: 0;
 }
 
-body{
-    background-color:"lightgreen"
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4e3d7;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('images/hero-bg.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.hero-buttons .btn {
+    background-color: #6b4b3f;
+}
+
+.hero-buttons .btn:hover,
+.hero-buttons .btn-outline:hover {
+    background-color: #fff;
+    color: #6b4b3f;
+}
+
+/* Featured Section */
+.featured {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4e3d7;
+}
+
+.featured h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6b4b3f;
+}
+
+.book-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    margin-bottom: 10px;
+}
+
+.book-item p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.book-item .btn {
+    background-color: #6b4b3f;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.book-item .btn:hover {
+    background-color: #4d362a;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6b4b3f;
+    color: #fff;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #f4e3d7;
 }
